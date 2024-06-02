@@ -10,7 +10,7 @@
   justify-content: center;
   text-align: center;
   transition: all 0.15s;
-  box-shadow: 0 0 15px #000000;
+  box-shadow: 0 0 15px #202020;
 }
 .btn-round:hover {
   box-shadow: 0 0 5px #000;
@@ -27,6 +27,7 @@
   padding: 10px 25px;
   border-radius: 5px;
   background: #ff715b;
+  color: #f1f1f1;
   transition: all 0.1s;
 }
 .btn-card:hover {
@@ -38,12 +39,16 @@
   background-color: red;
 }
 
+.text-highlight {
+  color: #ff715b;
+}
+
 .card {
   width: 50%;
   height: 60%;
   background-color: #1E2028;
   border-radius: 20px;
-  box-shadow: 3px 3px 20px 0px #0e0e0e;
+  box-shadow: 3px 3px 20px 0px #141414;
   transition: all 0.1s ease-in-out;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -54,9 +59,22 @@
   box-shadow: 2px 2px 10px 0px #0a0a0a;
 }
 .card .image {
-  border-radius: 20px 0 0 20px;
-  background: url("../img/1.jpg") no-repeat center center/cover;
   height: 100%;
+}
+.card .image.left {
+  border-radius: 20px 0 0 20px;
+}
+.card .image.right {
+  border-radius: 0 20px 20px 0;
+}
+.card .image#rkv {
+  background: url("../img/1.jpg") no-repeat center center/cover;
+}
+.card .image#adms {
+  background: url("../img/adms.jpg") no-repeat center center/cover;
+}
+.card .image#kods {
+  background: url("../img/kods.png") no-repeat left center/cover;
 }
 .card .info {
   color: #f1f1f1;
@@ -96,7 +114,7 @@ body {
 }
 
 .index #index-header {
-  background-image: url("../img/lu2.jpg");
+  background-image: url("../img/lu3.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -104,7 +122,7 @@ body {
 .index #index-header-overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(18, 20, 29, 0.9764705882);
+  background-color: rgba(18, 20, 29, 0.88);
 }
 .index #index-header-overlay .index-header-gradient {
   width: 100%;
@@ -125,7 +143,7 @@ body {
   z-index: 3;
 }
 .index #index-header #nav-bar a {
-  color: #3e3e49;
+  color: #89899b;
   transition: all 0.1s;
 }
 .index #index-header #nav-bar a:hover {
@@ -151,30 +169,28 @@ body {
   margin-bottom: 1rem;
 }
 
-.section {
+.card-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  background-color: #12141D;
 }
-.section .btn-wrap {
+.card-section .btn-wrap {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
-.section .btn-round {
+.card-section .btn-round {
   transform: translateY(2rem);
-}
-
-#skola {
-  height: 100vh;
-  background-color: #12141D;
 }
 
 .information {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 3rem;
 }
 .information-header {
   display: flex;
@@ -186,7 +202,7 @@ body {
 .information-header h1 {
   color: #f1f1f1;
   font-size: 60px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
   font-family: "Lora", serif;
 }
 .information-header .header-line {
@@ -194,14 +210,49 @@ body {
   width: 120px;
   background: #ff715b;
 }
+.information .image-section {
+  width: 800px;
+  height: 500px;
+  margin-bottom: 3rem;
+}
+.information .image-section .image-wrap {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+}
+.information .image-section .image-wrap#rkv {
+  background: url("../img/1.jpg") no-repeat center center/cover;
+}
+.information .image-section .image-wrap#microsoft {
+  background: url("../img/microsoft.png") no-repeat center center/cover;
+}
+.information .image-section .image-wrap#adms {
+  background: url("../img/adms.jpg") no-repeat center center/cover;
+}
+.information .image-section .image-wrap#orkestris {
+  background: url("../img/orkestris.jpg") no-repeat center center/cover;
+}
+.information .image-section .image-wrap#minhene {
+  background: url("../img/minhene.jpg") no-repeat center center/cover;
+}
+.information .image-section .image-wrap#ergli {
+  background: url("../img/ergli.jpg") no-repeat center center/cover;
+}
+.information .image-section .image-text {
+  color: #ccc;
+  font-weight: 300;
+  margin-top: 0.3rem;
+  margin-left: 1rem;
+}
 .information .text-section {
   color: #f1f1f1;
   max-width: 38vw;
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .information .text-section p {
   line-height: 2.5rem;
