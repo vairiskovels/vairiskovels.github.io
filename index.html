@@ -13,22 +13,28 @@
 <body class="index">
     <header id="index-header">
         <div id="index-header-overlay">
+            <button id="theme-toggle-btn">
+                <i class="fa-regular fa-lightbulb bulb show"></i>
+                <i class="fa-solid fa-lightbulb bulb hide"></i>
+            </button>
             <nav id="nav-bar">
-                <div class="nav-item"><a href="#">Sākums</a></div>
-                <div class="nav-item"><a href="#skola">Skola</a></div>
-                <div class="nav-item"><a href="#muzikas-skola">Mūzikas skola</a></div>
-                <div class="nav-item"><a href="#pirmie-meginajumi">Pirmie mēģinājumi</a></div>
+                <div class="nav-item"><a href="#" class="nav-item-text">Sākums</a></div>
+                <div class="nav-item"><a href="#skola" class="nav-item-text">Skola</a></div>
+                <div class="nav-item"><a href="#muzikas-skola" class="nav-item-text">Mūzikas skola</a></div>
+                <div class="nav-item"><a href="#pirmie-meginajumi" class="nav-item-text">Pirmie mēģinājumi</a></div>
+                <div class="nav-item"><a href="#edmv" class="nav-item-text">EDMV</a></div>
+                <div class="nav-item"><a href="#izvele" class="nav-item-text">Izvēle</a></div>
+                <div class="nav-item"><a href="#lu" class="nav-item-text">Latvijas Universitāte</a></div>
             </nav>
-            
             <main id="main-section">
                 <div class="main-text">
-                    <h3>Mans ceļš uz</h3>
-                    <h1>LATVIJAS UNIVERSITĀTI</h1>
+                    <h3 id="header-h3">Mans ceļš uz</h3>
+                    <h1 id="header-h1">LATVIJAS UNIVERSITĀTI</h1>
                 </div>
-                <a href="#skola" class="btn-round"><i class="fa-solid fa-arrow-down"></i></a>
+                <a href="#skola" class="btn-round" id="btn-round"><i class="fa-solid fa-arrow-down"></i></a>
             </main>
 
-            <div class="index-header-gradient"></div>
+            <div id="index-header-gradient"></div>
         </div>
     </header>
 
@@ -44,8 +50,8 @@
             </div>
         </div>
         <div class="btn-wrap">
-            <a href="#muzikas-skola" class="btn-round"><i class="fa-solid fa-arrow-down"></i></a>
             <a href="#" class="btn-round up"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#muzikas-skola" class="btn-round"><i class="fa-solid fa-arrow-down"></i></a>
         </div>
     </section>
 
@@ -61,8 +67,8 @@
             <div class="image right" id="adms"></div>
         </div>
         <div class="btn-wrap">
-            <a href="#pirmie-meginajumi" class="btn-round"><i class="fa-solid fa-arrow-down"></i></a>
             <a href="#skola" class="btn-round up"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#pirmie-meginajumi" class="btn-round"><i class="fa-solid fa-arrow-down"></i></a>
         </div>
     </section>
 
@@ -78,10 +84,62 @@
             </div>
         </div>
         <div class="btn-wrap">
-            <a href="#" class="btn-round"><i class="fa-solid fa-arrow-down"></i></a>
             <a href="#muzikas-skola" class="btn-round up"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#edmv" class="btn-round"><i class="fa-solid fa-arrow-down"></i></a>
         </div>
     </section>
 
+    <section id="edmv" class="card-section">
+        <div class="card">
+            <div class="info">
+                <div class="text">
+                    <h2>Emīla Dārziņa mūzikas vidusskola</h2>
+                    <p>Pēc mūzikas skolas pabeigšanas man bija iespēja turpināt apgūt mežraga spēli vienā no, ja pat ne prestižākajā, mūzikas skolā Latvijā.</p>
+                </div>
+                <a href="edmv.html" class="btn-card">Vairāk</a>
+            </div>
+            <div class="image right" id="edmv"></div>
+        </div>
+        <div class="btn-wrap">
+            <a href="#pirmie-meginajumi" class="btn-round up"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#izvele" class="btn-round"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <section id="izvele" class="card-section">
+        <div class="card">
+            <div class="image left" id="izvele"></div>
+            <div class="info">
+                <div class="text">
+                    <h2>Izvēle</h2>
+                    <p>Pabeidzot EDMV man bija jāizvēlās kur es gribu iet tālāk un ko vēlos darīt. Izvēle nebija viegla, bet atskatoties, esmu pateicīgs, ka notika tā kā notika. Ja tā izvēle netiktu izdarīta, tad iespējams tagad es nestudētu Latvijas Universitātē.</p>
+                </div>
+                <a href="izvele.html" class="btn-card">Vairāk</a>
+            </div>
+        </div>
+        <div class="btn-wrap">
+            <a href="#edmv" class="btn-round up"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#lu" class="btn-round"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <section id="lu" class="card-section">
+        <div class="card">
+            <div class="info">
+                <div class="text">
+                    <h2>Latvijas Universitāte</h2>
+                    <p>Šī interesantā ceļa galapunkts, pagaidām.</p>
+                </div>
+                <a href="lu.html" class="btn-card">Vairāk</a>
+            </div>
+            <div class="image right" id="lu"></div>
+        </div>
+        <div class="btn-wrap">
+            <a href="#izvele" class="btn-round up"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#" class="btn-round"><i class="fa-solid fa-rotate-right"></i></a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
