@@ -109,22 +109,22 @@
   border-radius: 0 20px 20px 0;
 }
 .card .image#rkv {
-  background: url("../img/1.jpg") no-repeat center center/cover;
+  background: url("../img/IMG_1821.JPG") no-repeat center center/cover;
 }
 .card .image#adms {
-  background: url("../img/adms.jpg") no-repeat center center/cover;
+  background: url("../img/IMG_1802.JPG") no-repeat center center/cover;
 }
 .card .image#kods {
   background: url("../img/kods.png") no-repeat left center/cover;
 }
 .card .image#edmv {
-  background: url("../img/edmv.jpg") no-repeat right center/cover;
+  background: url("../img/IMG_1834.JPG") no-repeat center center/cover;
 }
 .card .image#izvele {
-  background: url("../img/r6vsk.jpg") no-repeat center center/cover;
+  background: url("../img/IMG_1869.JPG") no-repeat center center/cover;
 }
 .card .image#lu {
-  background: url("../img/lu2.jpg") no-repeat center center/cover;
+  background: url("../img/IMG_1856.JPG") no-repeat center center/cover;
 }
 .card .info {
   color: #f1f1f1;
@@ -170,7 +170,7 @@ body.light-theme {
 }
 
 .index #index-header {
-  background-image: url("../img/lu3.jpg");
+  background-image: url("../img/lu3.JPG");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -299,13 +299,13 @@ body.light-theme {
   background-color: gray;
 }
 .information .image-section .image-wrap#rkv {
-  background: url("../img/1.jpg") no-repeat center center/cover;
+  background: url("../img/IMG_1818.JPG") no-repeat center center/cover;
 }
 .information .image-section .image-wrap#microsoft {
-  background: url("../img/microsoft.png") no-repeat center center/cover;
+  background: url("../img/IMG_1831.JPG") no-repeat center center/cover;
 }
 .information .image-section .image-wrap#adms {
-  background: url("../img/adms.jpg") no-repeat center center/cover;
+  background: url("../img/IMG_1802.JPG") no-repeat center center/cover;
 }
 .information .image-section .image-wrap#orkestris {
   background: url("../img/orkestris.jpg") no-repeat center center/cover;
@@ -317,7 +317,7 @@ body.light-theme {
   background: url("../img/ergli.jpg") no-repeat center center/cover;
 }
 .information .image-section .image-wrap#edmv {
-  background: url("../img/edmv2.jpg") no-repeat center center/cover;
+  background: url("../img/IMG_1841.JPG") no-repeat center center/cover;
 }
 .information .image-section .image-wrap#klase {
   background: url("../img/klase.jpg") no-repeat center center/cover;
@@ -326,13 +326,13 @@ body.light-theme {
   background: url("../img/auseklitis.jpg") no-repeat center center/cover;
 }
 .information .image-section .image-wrap#r6vsk {
-  background: url("../img/r6vsk.jpg") no-repeat center center/cover;
+  background: url("../img/IMG_1871.JPG") no-repeat center center/cover;
 }
 .information .image-section .image-wrap#cs50 {
   background: url("../img/cs50.png") no-repeat center center/cover;
 }
 .information .image-section .image-wrap#lu {
-  background: url("../img/lu2.jpg") no-repeat center center/cover;
+  background: url("../img/IMG_1856.JPG") no-repeat center center/cover;
 }
 .information .image-section .image-text {
   color: #ccc;
@@ -362,6 +362,16 @@ body.light-theme {
 @media only screen and (max-width: 1280px) {
   .index #index-header #nav-bar {
     gap: 3rem;
+  }
+  .card .info {
+    padding: 30px;
+  }
+  .card .info p {
+    font-size: 14px;
+  }
+  .card .info h2 {
+    margin-bottom: 1rem;
+    font-size: 34px;
   }
 }
 @media only screen and (max-width: 768px) {
